@@ -3,7 +3,7 @@
 flutter channel master  
 flutter upgrade  
 flutter config --enable-web    
-flutter run chrome  
+flutter run -d chrome  
 
 
 ## Issue 
@@ -44,6 +44,9 @@ _microtaskLoop @ schedule_microtask.dart:43
 _startMicrotaskLoop @ schedule_microtask.dart:52
 (anonymous) @ async_patch.dart:168
 Show 4 more frames
+```  
+  
+```
 errors.dart:147 Uncaught (in promise) Error: MissingPluginException(No implementation found for method StorageReference#getDownloadUrl on channel plugins.flutter.io/firebase_storage)
     at Object.throw_ [as throw] (errors.dart:196)
     at MethodChannel._invokeMethod (platform_channel.dart:154)
