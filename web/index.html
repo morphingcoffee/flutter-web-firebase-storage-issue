@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A new Flutter project.">
+
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="app">
+    <link rel="apple-touch-icon" href="/icons/Icon-192.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+    <title>app</title>
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+
+<!-- Firebase SDK dependencies -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-storage.js"></script>
+
+<!-- Firebase init. -->
+<script>
+    if (typeof firebase === 'undefined') throw new Error('hosting/init-error: Firebase SDK not detected.');
+    else {
+      throw new Error('Read the TODO in index.html');
+      // TODO uncomment & add your config details if you wish to confirm it works on JS level
+      //console.log('Initializing firebase');
+      //firebase.initializeApp({
+      //  "apiKey": "",
+      //  "appId": "",
+      //  "authDomain": "",
+      //  "databaseURL": "",
+      //  "measurementId": "",
+      //  "messagingSenderId": "",
+      //  "projectId": "",
+      //  "storageBucket": ""
+      //});
+      //
+      // Firebase Storage on JS level works fine
+      //console.dir(
+      //firebase
+      //  .storage()
+      //  .ref()
+      //  .child("test.png")
+      //  .getDownloadURL()
+      //);
+    }
+</script>
+
+<script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
